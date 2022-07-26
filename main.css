@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    display: grid;
+    flex-direction:column; 
+    grid-template-areas: "header header header"
+                            "nav nav nav"
+                            "main main main"
+                            "footer footer footer";
+
+    grid-template-rows: 10% 10% auto 10%;
+    grid-template-columns: auto;
+    background-color: white;
+    font-family: 'Space Mono', monospace;
+    animation: fadeIn 6s; 
+}
+
+header{
+    grid-area: header;
+    width: 100vw;
+    color: navy;
+    min-height: 15vh;
+}
+.name{
+    position: relative;
+    left: 5px;
+}
+nav{
+    grid-area: nav;
+    width: 100vw;
+    height: max-content;
+    font-size: 1.5rem;
+    color: navy;
+}
+
+.navList a:any-link{
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 50px;
+    float: right;
+    right: 20px;
+}
+.navList a:visited{
+    color: navy;
+}
+main {
+    grid-area: main;
+    padding: auto;
+}
+.welcomeMessage{
+    display: flexbox;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+    left: 20vw;
+    top: 15vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span{
+    color: navy;
+}
+
+#evangelos{
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    float: right;
+    right: 35vw;
+    bottom: 100px;
+}
+footer{
+    grid-area: footer;
+    font-size: 2rem;
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    padding-top: 125px;
+    
+    
+}
+.social{
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.social a:any-link {
+    margin: 0 auto;
+    justify-content: center;
+    display: inline-flex;
+    padding-left: 50px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.social a:visited{
+    color: navy;
+}
+.social a:hover{
+    color: grey;
+}
+
+
+/* Projects */
+.container {
+    position: relative;
+    left: 50px;
+    flex-wrap: wrap;
+}
+.container ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+.container a:any-link {
+    color: navy;
+    text-decoration: none;
+}
+.container a:visited {
+    color: navy;
+    text-decoration: none;
+}
+#marley{
+height: 100px;
+border-radius: 5px;
+
+}
+#marleyWebsite{
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+}
+#emmanuel{
+    height: 100px;
+    border-radius: 5px;
+}
+#EmmanuelWebsite{
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#weatherapp{
+height: 100px;
+border-radius: 5px;
+}
+#weatherAPI{
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#quizapp{
+    height: 100px;
+    border-radius: 5px;
+    }
+    #quizAPI{
+        border: 2px solid navy;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+#spaceinvaderAPP{
+        height: 100px;
+        border-radius: 5px;
+}
+#spaceinvader{
+    border: 2px solid navy;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover{
+    background-color: red;
+}
+    
+
+
+
+
+/* animations */
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
