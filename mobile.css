@@ -43,6 +43,12 @@ nav{
     animation: slide-in 1s ease 0s 1 normal none;
     font-size: 1.5rem;
 }
+
+.navList ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .hamburg ul {
     list-style-type: none;
     position: relative;
@@ -52,7 +58,8 @@ nav{
     left: 90vw;
     content: url(Images/burger.png);
     width: 10vw;
-    filter: invert(100);
+    /* filter: invert(100); */
+    
 }
 
 #hamburger{
@@ -60,7 +67,7 @@ nav{
     left: 90vw;
     content: url(Images/burger.png);
     width: 10vw;
-    filter: invert(100);   
+    /* filter: invert(100);    */
 }
 
 /*When "an item" is clicked - show the menu */
