@@ -6,11 +6,12 @@
 }
 body{
 
-    /* Chrome version 29 and above */
+
 @media screen and (-webkit-min-device-pixel-ratio:0)
 and (min-resolution:.001dpcm) {
 selector{ zoom: 75%; }
 }
+    /* Chrome version 29 and above */
     
     display: grid;
     flex-direction:column; 
