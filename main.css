@@ -5,7 +5,14 @@
     border: 0;
 }
 body{
- 
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+selector{ zoom: 75%; }
+}
+    /* Chrome version 29 and above */
+    
     display: grid;
     flex-direction:column; 
     grid-template-areas: "header header header"
