@@ -6,6 +6,8 @@
 }
 /* core website frame */
 body{
+    height: 100vh;
+    width: 100vw;
     display: grid;
     flex-direction:column; 
     grid-template-areas:"header"
@@ -44,10 +46,16 @@ nav{
     font-size: 1.5rem;
 }
 
+
 .navList ul{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.navList{
+    position: relative;
+    top: 25px;
+    right: 25px;
 }
 .hamburg ul {
     list-style-type: none;
@@ -91,6 +99,9 @@ nav{
 footer{
     grid-area: footer;
 }
+.social{
+    display: block;
+}
 
 /* index page */
 
@@ -115,4 +126,25 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.container ul
+{
+    position: relative;
+    right: 75px;
+}
+
+
+/* about me */
+.aboutMe h1{
+    position: relative;
+    text-align: center;
+    left: 10px;
+}
+
+
+/* University */
+.experience h2{
+    position: relative;
+    text-align: center;
+    left: 10px;
 }
