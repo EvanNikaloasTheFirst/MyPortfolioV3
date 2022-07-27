@@ -55,17 +55,27 @@ nav{
     height: max-content;
     font-size: 1.5rem;
     color: navy;
-    bottom: 800px;
+
+
 }
 
-.navList a:any-link{
+.navList{
     position: relative;
-    text-decoration: none;
+    bottom: 20vh;
+
+}
+.navList ul {
+    position: relative;
     display: inline-flex;
+    float: right;
+}
+.navList a:any-link{
+    text-decoration: none;
+
     list-style-type: none;
     padding-left: 50px;
-    float: right;
-    right: 20px;
+    
+  
 }
 .navList a:visited{
     color: navy;
@@ -98,6 +108,7 @@ footer{
     padding-left: 50px;
     text-decoration: none;
     list-style-type: none;
+    color: navy;
 }
 .social a:visited{
     color: navy;
@@ -149,8 +160,17 @@ span{
 /* Projects Page*/
 .container {
     position: relative;
-    left: 50px;
-    flex-wrap: wrap;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  left: 20vw;
+}
+
+.card{
+    width: 325px;
+    height: 325px;
 }
 .container ul{
     display: grid;
@@ -238,6 +258,12 @@ border-radius: 5px;
     width: fit-content;
     border-radius: 50px;
 }
+.aboutMe h1{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    left: 200px;
+}
 
 /* University page */
 
@@ -257,6 +283,14 @@ border-radius: 5px;
     font-weight: 700;
     font-style: italic;
 }
+
+.experience h2{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    left: 200px;
+}
+
 
 /* animations */
 @keyframes slideInLeft {
