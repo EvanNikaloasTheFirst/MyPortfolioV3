@@ -18,7 +18,27 @@ body{
     font-family: 'Space Mono', monospace;
     animation: fadeIn 6s; 
 }
+/* base website content */
+#homepage{
+   text-decoration: underline;
 
+}
+#aboutpage{
+    text-decoration: underline;
+ 
+ }
+#projectpage{
+    text-decoration: underline;
+ 
+}
+#aboutpage{
+    text-decoration: underline;
+ 
+}
+#experiencepage{
+    text-decoration: underline;
+ 
+ }
 header{
     grid-area: header;
     width: 100vw;
@@ -35,6 +55,7 @@ nav{
     height: max-content;
     font-size: 1.5rem;
     color: navy;
+    bottom: 800px;
 }
 
 .navList a:any-link{
@@ -53,29 +74,8 @@ main {
     grid-area: main;
     padding: auto;
 }
-.welcomeMessage{
-    display: flexbox;
-    position: relative;
-    margin: 0 auto;
-    text-align: left;
-    left: 20vw;
-    top: 15vh;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 
-span{
-    color: navy;
-}
 
-#evangelos{
-    max-width: 300px;
-    max-height: 300px;
-    position: relative;
-    float: right;
-    right: 35vw;
-    bottom: 100px;
-}
 footer{
     grid-area: footer;
     font-size: 2rem;
@@ -104,10 +104,49 @@ footer{
 }
 .social a:hover{
     color: grey;
+    text-decoration: underline;
+    animation: fadeIn 4s; 
 }
 
 
-/* Projects */
+/* Index page */
+.welcomeMessage{
+    display: flexbox;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+    left: 20vw;
+    top: 15vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 300px;
+}
+
+span{
+    color: navy;
+}
+
+#evangelos{
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    float: right;
+    right: 35vw;
+    bottom: 100px;
+}
+
+#btn{
+    color: navy;
+    background-color: white;
+    border-radius: 25px;
+}
+#btn:hover{
+    color: white;
+    background-color: navy;
+    border-radius: 25px;
+}
+
+/* Projects Page*/
 .container {
     position: relative;
     left: 50px;
@@ -176,13 +215,48 @@ border-radius: 5px;
     text-align: center;
 }
 
-.card:hover{
-    background-color: red;
+.card a:hover{
+   color: grey;
+    
 }
     
+/* About page */
+.aboutMe{
+    width: 70vw;
+    text-align: center;
+    margin: 0 auto;
+}
+.checked {
+    color: orange;
+  }
+.skills{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 25px;
+    border: 5px solid black;
+    width: fit-content;
+    border-radius: 50px;
+}
 
+/* University page */
 
+.experience{
+    width: 80vw;
+    margin: 0 auto;
+}
+.experience h2{
+    text-align: center;
+    font-weight: 700;
+}
+.experience p {
+    padding-top: 25px;
+}
 
+.experience span{
+    font-weight: 700;
+    font-style: italic;
+}
 
 /* animations */
 @keyframes slideInLeft {

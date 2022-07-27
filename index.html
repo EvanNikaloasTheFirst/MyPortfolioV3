@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css" media 
+    = "screen and (max-width:1000px)"/>
     <script src="index.js"></script>
     <title>Home</title>
 </head>
-<body>
+<body id = "clicked">
     <header>
         <div class="name">
 <h1>Evangelos</h1>
         </div>
+        <header>
+    <div class="hamburg">
+        <ul>
+            <li>
+                <a href="#clicked" class = "on" id = hamburger></a> 
+                <a href="#" class = "off shownav" ></a>
+            </li>
+           </ul>
+    </div>
     </header>
     <nav>
         <div class="navList">
         <ul>
-            <a href="index.html"><li>Home</li></a>
+            <a href="index.html" id="homepage"><li >Home</li></a>
             <a href="about.html"> <li>About</li></a>
                 <a href="projects.html"> <li>Projects</li></a>
+                <a href="univeristy.html"><li >University</li></a>
         </ul>
         </div>
     </nav>
@@ -28,7 +40,7 @@
     <p>Hi,</p>
     <p>I'am  <span>Evangelos</span></p>
     <p>I am a Software Engineer student</p>
-    <a href="projects.html"><button type="button">Click Me!</button></a>
+    <a href="projects.html"><button type="button" id="btn">Click Me!</button></a>
     <img src="Images/5-removebg-preview.png" alt="Evangelos - Nikoloas" id="evangelos">
 </div>
     </main>
